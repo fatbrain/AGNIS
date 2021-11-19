@@ -26,6 +26,54 @@
 
   "tokenColors": [
 		{
+			"name": "regex no-capture",
+			"scope": [
+				"punctuation.definition.group.no-capture.regexp"
+			],
+			"settings": {
+				"foreground": "#A2A599"
+			}
+		},
+		{
+			"name": "regex escape",
+			"scope": [
+				"constant.character.escape.backslash.regexp"
+			],
+			"settings": {
+				"foreground": "#D4FF70"
+			}
+		},
+		{
+			"name": "regex literal",
+			"scope": [
+				"string.regexp punctuation.definition.string.begin",
+				"string.regexp punctuation.definition.string.end"
+			],
+			"settings": {
+				"foreground": "#e98604"
+			}
+		},
+		{
+			"name": "regex group",
+			"scope": [
+				"string.regexp punctuation.definition.group.regexp"
+			],
+			"settings": {
+				"foreground": "#C3A644"
+			}
+		},
+		{
+			"name": "regex assertion",
+			"scope": [
+				"punctuation.definition.group.assertion.regexp",
+				"keyword.operator.negation.regexp"
+			],
+			"settings": {
+				"foreground": "#F2E2AE",
+				"fontStyle": "bold"
+			}
+		},
+		{
 			"name": "Doc comment parameter",
 			"scope": [
         "punctuation.definition.block.tag.jsdoc",
@@ -265,12 +313,9 @@
 			"name": "Regular expression groups", // TODO
 			"scope": [
 				"punctuation.definition.group.regexp",
-				"punctuation.definition.group.assertion.regexp",
-				"punctuation.definition.character-class.regexp",
-				"punctuation.character.set.begin.regexp",
-				"punctuation.character.set.end.regexp",
-				"keyword.operator.negation.regexp",
-				"support.other.parenthesis.regexp"
+				"support.other.parenthesis.regexp",
+				"constant.other.character-class.set.regexp",
+				"constant.character.set.regexp"
 			],
 			"settings": {
 				"foreground": "#D4FF70"
@@ -278,10 +323,9 @@
 		},
 		{
 			"scope": [
+				"punctuation.definition.character-class.regexp",
 				"constant.character.character-class.regexp",
-				"constant.other.character-class.set.regexp",
-				"constant.other.character-class.regexp",
-				"constant.character.set.regexp"
+				"constant.other.character-class.regexp"
 			],
 			"settings": {
 				"foreground": "#AFD35C" //TODO Regexps
@@ -293,7 +337,7 @@
 				"keyword.control.anchor.regexp"
 			],
 			"settings": {
-				"foreground": "#df3c7a" // TODO
+				"foreground": "#89DDFF" // TODO
 			}
 		},
 		{
